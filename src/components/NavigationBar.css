@@ -1,0 +1,13 @@
+.link{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.link:hover{
+    color: rgb(255, 191, 214);
+    text-decoration: none
+}
+
+.brand{
+    font-family: 'Lobster', cursive;
+}
