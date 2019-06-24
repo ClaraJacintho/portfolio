@@ -1,0 +1,25 @@
+.page{
+    position: absolute;
+    margin-top: 90px;
+    background: white;
+    margin-left: -4px;
+}
+
+.graph{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 600px) and (min-height: 600px) {
+    .big{
+        height: 100vh;
+    }
+    .graph{
+        margin-left: 0px;
+        margin-right: auto;
+    }
+    .page{
+        margin-top: 150px;
+    }
+}

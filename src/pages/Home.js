@@ -5,6 +5,7 @@ import Picture from '../assets/petit.jpg'
 import './Home.css'
 
 class Home extends React.Component {
+    
     render() {
         return (
             <div className="background">
@@ -22,9 +23,9 @@ class Home extends React.Component {
                                 <a className="btn" href="https://github.com/claraJacintho" target="_blank"><i className="fab fa-github"></i></a>
                                 <a className="btn" href="https://www.linkedin.com/in/clarajacintho/" target="_blank"><i className="fab fa-linkedin"></i></a>
                                 <h1 className="call">Check out my skills!</h1>
-                                <Button variant="light" block>
-                                    <Link to="/skills" className="cta">Skills</Link>
-                                </Button>
+                                <Link to="/skills" >
+                                    <Button className="cta" variant="light" block>Skills</Button>
+                                </Link>
                             </div>
                         </Col>
                     </Row>

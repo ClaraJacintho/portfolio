@@ -50,6 +50,7 @@
 .cta:hover{
     text-decoration: none;
     color: rgb(132, 0, 255);
+    background-color: rgb(216, 182, 255);
 }
 
 @media screen and (min-width: 600px) and (min-height: 600px) {
