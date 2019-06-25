@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom'
 import './NavigationBar.css'
 //TODO: Make a navbar you can click out of (instead of having to click hamburger icon)
+//TODO: Fix navbar errors on inspector
 export const NavigationBar = () =>(
     <>
         <Navbar bg="danger" variant="dark" expand="lg" fixed="top">

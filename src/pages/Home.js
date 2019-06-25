@@ -20,11 +20,11 @@ class Home extends React.Component {
                                 <h2 className="description">Computer Science student</h2>
                                 <h2 className="description">Software Engineering | Machine Learning | Web Dev</h2>
                                 
-                                <a className="btn" href="https://github.com/claraJacintho" target="_blank"><i className="fab fa-github"></i></a>
-                                <a className="btn" href="https://www.linkedin.com/in/clarajacintho/" target="_blank"><i className="fab fa-linkedin"></i></a>
+                                <a className="bigButtons" href="https://github.com/claraJacintho" target="_blank"><i className="fab fa-github"></i></a>
+                                <a className="bigButtons" href="https://www.linkedin.com/in/clarajacintho/" target="_blank"><i className="fab fa-linkedin"></i></a>
                                 <h1 className="call">Check out my skills!</h1>
                                 <Link to="/skills" >
-                                    <Button className="cta" variant="light" block>Skills</Button>
+                                    <Button className="bigButtons cta" variant="light" block>Skills</Button>
                                 </Link>
                             </div>
                         </Col>

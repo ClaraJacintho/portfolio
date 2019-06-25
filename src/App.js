@@ -6,8 +6,8 @@ import {About} from './pages/About'
 import Home from './pages/Home'
 import Skills from './pages/Skills'
 import {Education} from './pages/Education'
+import Project from './pages/Project'
 import {Contact} from './pages/Contact'
-import {Layout} from './components/Layout'
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
             <Route path="/about" component={About}/>
             <Route path="/skills" component={Skills}/>
             <Route path="/education" component={Education}/>
+            <Route path="/projects" component={Project}/>
             <Route path="/contact" component={Contact}/>
 
         </Switch>

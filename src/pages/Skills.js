@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Image, Button} from 'react-bootstrap'
-import '../../node_modules/react-vis/dist/style.css';
-import {VictoryBar, VictoryChart, VictoryLabel} from 'victory'
+import {Container, Row, Col} from 'react-bootstrap'
+import {VictoryBar, VictoryLabel} from 'victory'
 import './Skills.css'
 import Paper from '@material-ui/core/Paper'
 
-//background-image: linear-gradient(rgb(217,83,79),rgb(226, 29, 115));
-
+//TODO: prettyfy
 class Skills extends Component {
     
     render() {
@@ -35,7 +33,7 @@ class Skills extends Component {
         return (
             <div className="background top">
                 <div> ⠀ </div>
-                <Paper className="page">
+                <div className="page">
                 <Container>
                     <h1 className="skill">Skills</h1>
                     <Row>
@@ -111,7 +109,7 @@ class Skills extends Component {
                         </Col>
                     </Row>
                     </Container>
-                </Paper>  
+                </div>  
             </div>
         );
     }

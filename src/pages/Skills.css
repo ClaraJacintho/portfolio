@@ -2,15 +2,17 @@
     margin-top: 55px;
     margin:0;
     height: 100%;
+    min-height: 100vh;
 }
 .page{
-    margin-top: 25px;
+    margin-top: 45px;
+    background: white;
 }
 
 .skill{
     font-family: Lobster;
     color: maroon;
-    margin-top: 5px;
+    margin-top: 25px;
     font-size: 50px;
     text-align: center;
 }
@@ -24,7 +26,7 @@
 
 @media screen and (min-width: 600px) and (min-height: 600px) {
     .page{
-        margin-top: 75px;
+        margin-top: 55px;
         width: 70vw;
         display: block;
         margin-left: auto;
