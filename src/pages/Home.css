@@ -54,7 +54,7 @@
 }
 
 @media screen and (min-width: 600px) and (min-height: 600px) {
-    .big{
+    .fullScreen{
         height: 100vh;
     }
 

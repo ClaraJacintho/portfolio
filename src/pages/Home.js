@@ -9,7 +9,7 @@ class Home extends React.Component {
     render() {
         return (
             <div className="background">
-                <Container className="big">
+                <Container className="fullScreen">
                     <Row>
                         <Col lg={true} >
                             <Image src={Picture}  roundedCircle className="profile"/>

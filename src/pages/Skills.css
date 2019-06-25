@@ -1,30 +1,39 @@
+.top{
+    margin-top: 55px;
+    margin:0;
+    height: 100%;
+}
 .page{
-    position: absolute;
-    margin-top: 90px;
-    background: white;
-    margin-left: -4px;
+    margin-top: 25px;
 }
 
-.graph{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.skill{
+    font-family: Lobster;
+    color: maroon;
+    margin-top: 5px;
+    font-size: 50px;
+    text-align: center;
 }
 
-.label{
-    fill: white;
+.subtitle{
     font-family: oswald;
+    color: crimson;
+    font-size: 40px;
+    text-align: center;
 }
 
 @media screen and (min-width: 600px) and (min-height: 600px) {
-    .big{
-        height: 100vh;
-    }
-    .graph{
-        margin-left: 0px;
+    .page{
+        margin-top: 75px;
+        width: 70vw;
+        display: block;
+        margin-left: auto;
         margin-right: auto;
     }
-    .page{
-        margin-top: 150px;
+    .skill{
+        text-align: justify;
+    }
+    .subtitle{
+        text-align: justify;
     }
 }

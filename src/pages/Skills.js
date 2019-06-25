@@ -1,12 +1,9 @@
 import React, {Component} from 'react';
 import {Container, Row, Col, Image, Button} from 'react-bootstrap'
 import '../../node_modules/react-vis/dist/style.css';
-import {
-    XYPlot,
-    LabelSeries,
-    HorizontalBarSeries
-  } from 'react-vis'
+import {VictoryBar, VictoryChart, VictoryLabel} from 'victory'
 import './Skills.css'
+import Paper from '@material-ui/core/Paper'
 
 //background-image: linear-gradient(rgb(217,83,79),rgb(226, 29, 115));
 
@@ -14,50 +11,108 @@ class Skills extends Component {
     
     render() {
         const software = [
-            {x: 5, y:4},
-            {x: 4.5, y:3},
-            {x: 4.5, y:2},
-            {x: 3, y:1}
+            {x: 4, y:5, label:'Java'},
+            {x: 3, y:4, label:'C/C++'},
+            {x: 2, y:4, label:'Design Patterns'},
+            {x: 1, y:3, label:'Project Management'}
         ];
 
-        const labelSoftware = [
-            {x: 0.2, y:0.85, label:'Project Management'},
-            {x: 0.2, y:1.85, label:'Design Patterns'},
-            {x: 0.2, y:3.15, label:'C/C++'},
-            {x: 0.2, y:4.15, label:'Java'}
+        const ml = [
+            {x: 4, y:5, label:'Python'},
+            {x: 3, y:4, label:'Statistics'},
+            {x: 2, y:4, label:'Keras'},
+            {x: 1, y:3, label:'Tensor Flow'}
+        ];
+
+        const webdev = [
+            {x: 4, y:4, label:'HTML/CSS'},
+            {x: 3, y:4, label:'JavaScript'},
+            {x: 2, y:3, label:'React'},
+            {x: 1, y:3, label:'Bootstrap'}
         ];
 
           
         return (
-            <Container className="page">
-                <h1>Skills</h1>
-                <Row>
-                    <Col>
-                        <XYPlot height={300} width={300}  color="hotpink"  animation="wobbly" className="graph">
-                            <HorizontalBarSeries  data={software} animation="wobbly" barWidth={0.5}/>
-                            <LabelSeries data={labelSoftware} className="label"  animation="wobbly"/>
-                        </XYPlot>
-                    </Col>
-                    <Col>
-                        <h1>Software Engineering</h1>
-                        <p>I'm very good. Trust me!</p>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <h1>Machine Learning</h1>
-                        <p>Good, not amazing</p>
-                    </Col>
-                    <Col>graph</Col>
-                </Row>
-                <Row>
-                    <Col>graph</Col>
-                    <Col>
-                        <h1>Web development</h1>
-                        <p>Basically a noob!</p>
-                    </Col>
-                </Row>
-            </Container>  
+            <div className="background top">
+                <div> ⠀ </div>
+                <Paper className="page">
+                <Container>
+                    <h1 className="skill">Skills</h1>
+                    <Row>
+                        <Col lg={true}>
+                            <h1 className="subtitle">Software Engineering</h1>
+                            <p>I'm very good. Trust me!</p>
+                        </Col>
+                        <Col lg={true}>    
+                            <VictoryBar horizontal data={software} barRatio={1.4} style={{
+                                                                                        data: {
+                                                                                            fill: "#c43a31",
+                                                                                        },
+                                                                                        labels: {
+                                                                                            fontFamily: "oswald",
+                                                                                            fill: "white"
+                                                                                        }
+                                                                                        }}
+                            labelComponent={
+                                <VictoryLabel verticalAnchor="middle" textAnchor="end"  dx={-20}/>
+                                }
+                                animate={{ duration: 1000, easing: "bounce" }}
+                                domain={{x: [0, 4], y: [0, 5]}}
+                                className="graph"
+                            />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col lg={true}>
+                            <h1 className="subtitle">Machine Learning</h1>
+                            <p>Good, not amazing</p>
+                        </Col>
+                        <Col lg={true}>
+                            <VictoryBar horizontal data={ml} barRatio={1.4} style={{
+                                                                                        data: {
+                                                                                            fill: "#c43a31",
+                                                                                        },
+                                                                                        labels: {
+                                                                                            fontFamily: "oswald",
+                                                                                            fill: "white"
+                                                                                        }
+                                                                                        }}
+                                labelComponent={
+                                    <VictoryLabel verticalAnchor="middle" textAnchor="end"  dx={-20}/>
+                                }
+                                animate={{ duration: 1, easing: "bounce" }}
+                                domain={{x: [0, 4], y: [0, 5]}}
+                                className="graph"
+                            />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col lg={true}>
+                            <h1 className="subtitle">Web development</h1>
+                            <p>Basically a noob!</p>
+                        </Col>
+                        <Col lg={true}>
+                            <VictoryBar horizontal data={webdev} barRatio={1.4} style={{
+                                                                                        data: {
+                                                                                            fill: "#c43a31",
+                                                                                        },
+                                                                                        labels: {
+                                                                                            fontFamily: "oswald",
+                                                                                            fill: "white"
+                                                                                        }
+                                                                                        }}
+                                labelComponent={
+                                    <VictoryLabel verticalAnchor="middle" textAnchor="end"  dx={-20}/>
+                                }
+                                domain={{x: [0, 4], y: [0, 5]}}
+                                animate={{ duration: 1, easing: "bounce" }}
+                                className="graph"
+                            />
+                        </Col>
+                    </Row>
+                    </Container>
+                </Paper>  
+            </div>
         );
     }
 }
