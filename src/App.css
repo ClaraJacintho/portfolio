@@ -9,4 +9,47 @@
     background-image: linear-gradient(rgb(217,83,79),rgb(226, 29, 115));
  }
 
+ .top{
+  margin-top: 55px;
+  margin:0;
+  height: 100%;
+  min-height: 100vh;
+}
+.page{
+  margin-top: 45px;
+  background: white;
+  min-height: 85vh;
+}
+
+.pageTitle{
+  font-family: Lobster;
+  color: maroon;
+  margin-top: 25px;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+.subtitle{
+  font-family: oswald;
+  color: crimson;
+  font-size: 40px;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) and (min-height: 600px) {
+  .page{
+      margin-top: 55px;
+      width: 70vw;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .pageTitle{
+      text-align: justify;
+  }
+  .subtitle{
+      text-align: justify;
+  }
+}
  /*TODO: Add all global styles here*/

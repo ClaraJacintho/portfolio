@@ -1,0 +1,12 @@
+.projectBanner{
+    height: 150px;
+    object-fit: cover;
+}
+
+.card{
+    width: 16rem;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+}

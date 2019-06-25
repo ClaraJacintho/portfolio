@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Container, Row, Col} from 'react-bootstrap'
 import {VictoryBar, VictoryLabel} from 'victory'
 import './Skills.css'
-import Paper from '@material-ui/core/Paper'
 
 //TODO: prettyfy
 class Skills extends Component {
@@ -17,7 +16,7 @@ class Skills extends Component {
 
         const ml = [
             {x: 4, y:5, label:'Python'},
-            {x: 3, y:4, label:'Statistics'},
+            {x: 3, y:4.5, label:'R'},
             {x: 2, y:4, label:'Keras'},
             {x: 1, y:3, label:'Tensor Flow'}
         ];
@@ -35,7 +34,7 @@ class Skills extends Component {
                 <div> ⠀ </div>
                 <div className="page">
                 <Container>
-                    <h1 className="skill">Skills</h1>
+                    <h1 className="pageTitle">Skills</h1>
                     <Row>
                         <Col lg={true}>
                             <h1 className="subtitle">Software Engineering</h1>

@@ -7,7 +7,7 @@ import Home from './pages/Home'
 import Skills from './pages/Skills'
 import {Education} from './pages/Education'
 import Project from './pages/Project'
-import {Contact} from './pages/Contact'
+import Contact from './pages/Contact'
 
 function App() {
   return (
