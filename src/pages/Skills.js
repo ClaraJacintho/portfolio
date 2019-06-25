@@ -3,10 +3,7 @@ import {Container, Row, Col, Image, Button} from 'react-bootstrap'
 import '../../node_modules/react-vis/dist/style.css';
 import {
     XYPlot,
-    XAxis,
-    YAxis,
-    VerticalGridLines,
-    HorizontalGridLines,
+    LabelSeries,
     HorizontalBarSeries
   } from 'react-vis'
 import './Skills.css'
@@ -17,23 +14,28 @@ class Skills extends Component {
     
     render() {
         const software = [
-            {x: 5, y: 'Java'},
-            {x: 4.5, y: 'C/C++'},
-            {x: 4.5, y: 'Design Patterns'},
-            {x: 3, y: 'Project Management'}
+            {x: 5, y:4},
+            {x: 4.5, y:3},
+            {x: 4.5, y:2},
+            {x: 3, y:1}
         ];
+
+        const labelSoftware = [
+            {x: 0.2, y:0.85, label:'Project Management'},
+            {x: 0.2, y:1.85, label:'Design Patterns'},
+            {x: 0.2, y:3.15, label:'C/C++'},
+            {x: 0.2, y:4.15, label:'Java'}
+        ];
+
           
         return (
             <Container className="page">
                 <h1>Skills</h1>
                 <Row>
                     <Col>
-                        <XYPlot height={300} width={300} stackBy="y" color="hotpink" className="graph">
-                            <VerticalGridLines />
-                            <HorizontalGridLines />
-                            <XAxis />
-                            <YAxis />
-                            <HorizontalBarSeries yType="ordinal" data={software} />
+                        <XYPlot height={300} width={300}  color="hotpink"  animation="wobbly" className="graph">
+                            <HorizontalBarSeries  data={software} animation="wobbly" barWidth={0.5}/>
+                            <LabelSeries data={labelSoftware} className="label"  animation="wobbly"/>
                         </XYPlot>
                     </Col>
                     <Col>

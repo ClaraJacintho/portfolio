@@ -11,6 +11,11 @@
     margin-right: auto;
 }
 
+.label{
+    fill: white;
+    font-family: oswald;
+}
+
 @media screen and (min-width: 600px) and (min-height: 600px) {
     .big{
         height: 100vh;
