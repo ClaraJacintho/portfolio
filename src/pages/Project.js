@@ -4,23 +4,26 @@ import './Project.css'
 import PortfolioPicture from "../assets/portfolio.jpg"
 import GesturePicture from "../assets/gesture.jpg"
 import HandymanPicture from "../assets/handyman.jpg"
+import project from '../assets/content/projects.json'
+
 class Project extends Component {
     constructor(props, context) {
         super(props, context);
     
-        this.handleShow = this.handleShow.bind(this);
-        this.handleClose = this.handleClose.bind(this);
-    
         this.state = {
-          show: false,
+            show: false,
+            project: {}
         };
       }
-    
-      handleClose() {
+      
+
+      handleClose = () => {
+        this.setState({ project: "" });
         this.setState({ show: false });
       }
     
-      handleShow() {
+      handleShow = (target) => {
+        this.setState({ project: target });
         this.setState({ show: true });
       }    
 
@@ -36,11 +39,9 @@ class Project extends Component {
                                 <Card className="card">
                                     <Card.Img variant="top" src={PortfolioPicture} className="projectBanner"/>
                                     <Card.Body>
-                                        <Card.Title>Portfolio Website</Card.Title>
-                                        <Card.Text>
-                                            A Portfolio website built with React
-                                        </Card.Text>
-                                        <Button size="sm" variant="danger"  onClick={this.handleShow}>More</Button>
+                                        <Card.Title>{project.portfolio.title}</Card.Title>
+                                        <Card.Text>{project.portfolio.previewText}</Card.Text>
+                                        <Button size="sm" variant="danger"  onClick={this.handleShow.bind(this, project.portfolio)}>More</Button>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -48,11 +49,9 @@ class Project extends Component {
                                 <Card  className="card">
                                     <Card.Img variant="top" src={GesturePicture} className="projectBanner"/>
                                     <Card.Body>
-                                        <Card.Title>Gesture recognition</Card.Title>
-                                        <Card.Text>
-                                            A project to recognize simple hand gestures
-                                        </Card.Text>
-                                        <Button size="sm" variant="danger">More</Button>
+                                        <Card.Title>{project.gesture.title}</Card.Title>
+                                        <Card.Text>{project.gesture.previewText}</Card.Text>
+                                        <Button size="sm" variant="danger" onClick={this.handleShow.bind(this, project.gesture)}>More</Button>
                                     </Card.Body>
                                 </Card> 
                             </Col>
@@ -60,24 +59,30 @@ class Project extends Component {
                                 <Card className="card">
                                     <Card.Img variant="top" src={HandymanPicture} className="projectBanner"/>
                                     <Card.Body>
-                                        <Card.Title>Handymen application</Card.Title>
-                                        <Card.Text>
-                                            A Java application to hire handymen
-                                        </Card.Text>
-                                        <Button size="sm" variant="danger">More</Button>
+                                    <Card.Title>{project.handyman.title}</Card.Title>
+                                        <Card.Text>{project.handyman.previewText}</Card.Text>
+                                        <Button size="sm" variant="danger" onClick={this.handleShow.bind(this, project.handyman)}>More</Button>
                                     </Card.Body>
                                 </Card>   
                             </Col>                            
                         </Row>
                     </Container>
                 </div>
-                <Modal show={this.state.show} onHide={this.handleClose}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Project title </Modal.Title>
+                <Modal show={this.state.show} onHide={this.handleClose} size="lg" >
+                    <Modal.Header closeButton className="project">
+                    <Modal.Title>{this.state.project.title}</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Alas a description that is not good</Modal.Body>
-                    <Modal.Footer>
-                        <Button variant="secondary" onClick={this.handleClose}>
+                    <Modal.Body>
+                        {this.state.project.description}
+                        <h4>Technologies used:</h4>
+                        {this.state.project.technologies}
+                        <br/>
+                        <h4>What I would do differently</h4>
+                        {this.state.project.mistakes}
+                    </Modal.Body>
+                    <Modal.Footer  className="project">
+                        <a  className="bigButton" href={this.state.project.link} target="_blank"><i className="fab fa-github"></i></a>
+                        <Button variant="danger" onClick={this.handleClose}>
                         Close
                         </Button>
                     </Modal.Footer>

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Container, Row, Col, Image, Button} from 'react-bootstrap'
 import Link from 'react-router-dom/Link'
 import Picture from '../assets/petit.jpg'
