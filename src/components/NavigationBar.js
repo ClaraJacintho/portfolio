@@ -7,7 +7,7 @@ import './NavigationBar.css'
 //TODO: Fix navbar errors on inspector
 export const NavigationBar = () =>(
     <>
-        <Navbar bg="danger" variant="dark" expand="lg" fixed="top">
+        <Navbar className="nav" variant="dark" expand="lg" fixed="top">
             <Navbar.Brand className="brand">Clara Jacintho</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -30,16 +30,6 @@ export const NavigationBar = () =>(
                     <Nav.Item>
                         <Nav.Link>
                             <Link to="/projects" className="link">Projects</Link>
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link>
-                            <Link to="/about" className="link">About me</Link>
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link>
-                            <Link to="/contact" className="link">Contact</Link>
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>

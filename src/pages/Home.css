@@ -28,17 +28,24 @@
     font-size: 50px;
 }
 
-.cta{
-    color: rgb(217,83,79);
+.wordButton{
+    color: #003D6B;
     font-family: 'Oswald', sans-serif;
-    font-size: 50px;;
 }
 
-.cta:hover{
+.hov:hover{
+    color:rgb(13, 189, 171); 
     text-decoration: none;
-    color: rgb(132, 0, 255);
-    background-color: rgb(216, 182, 255);
 }
+
+.icons{
+    background: none;
+    font-size: 50px;
+    border: none;
+    color: white;
+    padding: 15px;
+}
+
 
 @media screen and (min-width: 600px) and (min-height: 600px) {
     .fullScreen{
@@ -53,3 +60,4 @@
         margin-top: 150px;
     }
 }
+

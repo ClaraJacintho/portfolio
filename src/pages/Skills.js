@@ -37,13 +37,13 @@ class Skills extends Component {
                     <h1 className="pageTitle">Skills</h1>
                     <Row>
                         <Col lg={true}>
-                            <h1 className="subtitle">Software Engineering</h1>
+                            <h1 className="subtitle" style={{color: "#072C82"}}>Software Engineering</h1>
                             <p>I'm very good. Trust me!</p>
                         </Col>
                         <Col lg={true}>    
                             <VictoryBar horizontal data={software} barRatio={1.4} style={{
                                                                                         data: {
-                                                                                            fill: "#c43a31",
+                                                                                            fill: "#072C82",
                                                                                         },
                                                                                         labels: {
                                                                                             fontFamily: "oswald",
@@ -61,13 +61,13 @@ class Skills extends Component {
                     </Row>
                     <Row>
                         <Col lg={true}>
-                            <h1 className="subtitle">Machine Learning</h1>
+                            <h1 className="subtitle" style={{color: "#076D82"}}>Machine Learning</h1>
                             <p>Good, not amazing</p>
                         </Col>
                         <Col lg={true}>
                             <VictoryBar horizontal data={ml} barRatio={1.4} style={{
                                                                                         data: {
-                                                                                            fill: "#c43a31",
+                                                                                            fill: "#076D82",
                                                                                         },
                                                                                         labels: {
                                                                                             fontFamily: "oswald",
@@ -85,13 +85,13 @@ class Skills extends Component {
                     </Row>
                     <Row>
                         <Col lg={true}>
-                            <h1 className="subtitle">Web development</h1>
+                            <h1 className="subtitle" style={{color: "#06786C"}}>Web development</h1>
                             <p>Basically a noob!</p>
                         </Col>
                         <Col lg={true}>
                             <VictoryBar horizontal data={webdev} barRatio={1.4} style={{
                                                                                         data: {
-                                                                                            fill: "#c43a31",
+                                                                                            fill: "#06786C",
                                                                                         },
                                                                                         labels: {
                                                                                             fontFamily: "oswald",

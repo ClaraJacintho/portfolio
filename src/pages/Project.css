@@ -12,5 +12,25 @@
 }
 
 .project{
-    background: lightpink;
+    background: #076D82;
 }
+
+.modalImg{
+    width: 95%;
+    display: inline;
+}
+
+.centerButton{
+    display: inline;
+}
+
+.modalTitle{
+    font-family: Oswald;
+    color: aliceblue
+}
+
+.modalSubtitle{
+    font-family: Oswald;
+    color: black
+}
+

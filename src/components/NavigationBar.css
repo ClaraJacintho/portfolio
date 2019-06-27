@@ -4,10 +4,14 @@
 }
 
 .link:hover{
-    color: rgb(255, 191, 214);
+    color: rgb(13, 189, 171);
     text-decoration: none
 }
 
 .brand{
     font-family: 'Lobster', cursive;
+}
+
+.nav{
+    background: #003D6B;
 }

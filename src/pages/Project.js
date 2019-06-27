@@ -1,10 +1,15 @@
 import React, {Component} from 'react';
 import {Container, Row, Col, Card, Button, Modal} from 'react-bootstrap'
 import './Project.css'
-import PortfolioPicture from "../assets/portfolio.jpg"
-import GesturePicture from "../assets/gesture.jpg"
-import HandymanPicture from "../assets/handyman.jpg"
+import PortfolioPicture from "../assets/portfolio_banner.jpg"
+import GesturePicture from "../assets/gesture_banner.jpg"
+import HandymanPicture from "../assets/handyman_banner.jpg"
 import project from '../assets/content/projects.json'
+//There must be another way!
+import GestureP from "../assets/gesture_project.png"
+import HandymanP from "../assets/handyman_project.png"
+import PortfolioP from "../assets/portfolio_project.png"
+import questionPicture from "../assets/undefined.jpg"
 
 class Project extends Component {
     constructor(props, context) {
@@ -12,18 +17,26 @@ class Project extends Component {
     
         this.state = {
             show: false,
-            project: {}
+            project: {},
+            img: {}
         };
       }
       
 
       handleClose = () => {
         this.setState({ project: "" });
+
         this.setState({ show: false });
       }
     
       handleShow = (target) => {
         this.setState({ project: target });
+        switch(target.img){
+            case("portfolio"): this.setState({ image: PortfolioP }); break;
+            case("gesture"): this.setState({ image: GestureP }); break;
+            case("handyman"): this.setState({ image:  HandymanP}); break;
+            default:  this.setState({ image:  questionPicture}); break;
+        }
         this.setState({ show: true });
       }    
 
@@ -41,8 +54,10 @@ class Project extends Component {
                                     <Card.Body>
                                         <Card.Title>{project.portfolio.title}</Card.Title>
                                         <Card.Text>{project.portfolio.previewText}</Card.Text>
-                                        <Button size="sm" variant="danger"  onClick={this.handleShow.bind(this, project.portfolio)}>More</Button>
-                                    </Card.Body>
+                                        <div className="text-center">
+                                            <Button block size="sm" variant="primary"  onClick={this.handleShow.bind(this, project.portfolio)}>More</Button>
+                                        </div>
+                                        </Card.Body>
                                 </Card>
                             </Col>
                             <Col lg={true}>
@@ -51,7 +66,10 @@ class Project extends Component {
                                     <Card.Body>
                                         <Card.Title>{project.gesture.title}</Card.Title>
                                         <Card.Text>{project.gesture.previewText}</Card.Text>
-                                        <Button size="sm" variant="danger" onClick={this.handleShow.bind(this, project.gesture)}>More</Button>
+                                        <div className="text-center">
+                                            <Button block size="sm" variant="primary" onClick={this.handleShow.bind(this, project.gesture)}>More</Button>
+                                        </div>
+                                        
                                     </Card.Body>
                                 </Card> 
                             </Col>
@@ -61,7 +79,9 @@ class Project extends Component {
                                     <Card.Body>
                                     <Card.Title>{project.handyman.title}</Card.Title>
                                         <Card.Text>{project.handyman.previewText}</Card.Text>
-                                        <Button size="sm" variant="danger" onClick={this.handleShow.bind(this, project.handyman)}>More</Button>
+                                        <div className="text-center">
+                                            <Button block size="sm" className="centerButton" variant="primary" onClick={this.handleShow.bind(this, project.handyman)}>More</Button>
+                                        </div>
                                     </Card.Body>
                                 </Card>   
                             </Col>                            
@@ -70,21 +90,29 @@ class Project extends Component {
                 </div>
                 <Modal show={this.state.show} onHide={this.handleClose} size="lg" >
                     <Modal.Header closeButton className="project">
-                    <Modal.Title>{this.state.project.title}</Modal.Title>
+                    <Modal.Title className="modalTitle">{this.state.project.title}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
+                        <div className="text-center">
+                            <img className="modalImg" src={this.state.image}/>
+                        </div>
+                        <br/><br/>
+
+                        <h5 className="modalSubtitle"><b>The project</b></h5>
                         {this.state.project.description}
-                        <h4>Technologies used:</h4>
+                        <br/><br/>
+
+                        <h5 className="modalSubtitle"><b>Technologies used</b></h5>
                         {this.state.project.technologies}
-                        <br/>
-                        <h4>What I would do differently</h4>
+                        <br/><br/>
+
+                        <h5 className="modalSubtitle"><b>What I would do differently</b></h5>
                         {this.state.project.mistakes}
                     </Modal.Body>
                     <Modal.Footer  className="project">
-                        <a  className="bigButton" href={this.state.project.link} target="_blank"><i className="fab fa-github"></i></a>
-                        <Button variant="danger" onClick={this.handleClose}>
-                        Close
-                        </Button>
+                        <div className="text-left">
+                            <a  className="icons hov"style={{fontSize: 40}} href={this.state.project.link} target="_blank"><i className="fab fa-github"></i></a>
+                        </div>
                     </Modal.Footer>
                 </Modal>  
             </div>

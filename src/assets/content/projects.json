@@ -2,14 +2,16 @@
     "portfolio":{
         "title": "Portfolio Website",
         "previewText": "A Portfolio website built with React",
+        "img":"portfolio",
         "description": "This very website. I wanted to build a responsive portfolio site to showcase my projects and habilities while also picking up some web development skills.",
         "technologies":"HTML/CSS, JavaScript, React, Bootstrap, AWS",
         "mistakes":"I should have research more frontend libraries before starting with react-bootstrap.",
         "link":"https://github.com/ClaraJacintho/portfolio"
     },
     "gesture":{
-        "title": "Simple Gesture Recognition",
+        "title": "Gesture Recognition",
         "previewText": "A project to recognize simple hand gestures",
+        "img":"gesture",
         "description": "This project was developed in partnership with Boise State University as an Industrial Project during my 4th year at engineering school. It consisted of using visual and muscle features to recognize simple hand gestures.",
         "technologies":"Python, Keras, Tensor Flow, OpenCV",
         "mistakes":"We should have used a cloud computing machine to train the models.",
@@ -18,6 +20,7 @@
     "handyman":{
         "title": "Handyman Application",
         "previewText": "A Java application to hire handyman",
+        "img":"handyman",
         "description": "A Java application to hire handymen to do simple services. Inspired by Triider. Developed for the Software Engineering course using desing patterns.",
         "technologies":"Java",
         "mistakes":"We should have foucused on the front-end more.",
