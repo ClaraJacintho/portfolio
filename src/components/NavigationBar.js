@@ -22,11 +22,11 @@ export const NavigationBar = () =>(
                             <Link to="/skills" className="link">Skills</Link>
                         </Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
+                   {/* <Nav.Item>
                         <Nav.Link>
                             <Link to="/education" className="link">Work and Education</Link>
                         </Nav.Link>
-                    </Nav.Item>
+                   </Nav.Item> */}
                     <Nav.Item>
                         <Nav.Link>
                             <Link to="/projects" className="link">Projects</Link>

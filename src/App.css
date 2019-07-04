@@ -20,6 +20,8 @@
   margin-top: 45px;
   background: white;
   min-height: 85vh;
+  display: flex; 
+  align-items: center;
 }
 
 .pageTitle{
@@ -36,7 +38,7 @@
   text-align: center;
 }
 
-@media screen and (min-width: 600px) and (min-height: 600px) {
+@media screen and (min-width: 1000px) and (min-height: 500px) {
   .page{
       margin-top: 55px;
       width: 70vw;

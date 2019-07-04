@@ -47,7 +47,7 @@ class Project extends Component {
                 <div className="page">
                     <Container>
                         <h1 className="pageTitle">Projects</h1>
-                        <Row>
+                        <Row className="center">
                             <Col lg={true}>
                                 <Card className="card">
                                     <Card.Img variant="top" src={PortfolioPicture} className="projectBanner"/>
