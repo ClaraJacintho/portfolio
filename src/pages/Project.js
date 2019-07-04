@@ -99,8 +99,8 @@ class Project extends Component {
                         <br/><br/>
 
                         <h5 className="modalSubtitle"><b>The project</b></h5>
-                        {this.state.project.description}
-                        <br/><br/>
+                        <div dangerouslySetInnerHTML={{__html: this.state.project.description}}/>                     
+                        <br/>
 
                         <h5 className="modalSubtitle"><b>Technologies used</b></h5>
                         {this.state.project.technologies}

@@ -3,7 +3,8 @@
         "title": "Portfolio Website",
         "previewText": "A Portfolio website built with React",
         "img":"portfolio",
-        "description": "This very website. I wanted to build a responsive portfolio site to showcase my projects and habilities while also picking up some web development skills.",
+        "description": 
+        "<p> I started this project in early 2019, without any experience in web development. I began by learning the technologies, like HTML, CSS, JavaScript and Bootstrap on FreeCodeCamp.org. After completing some of the courses and feeling I was ready, I began developing this website. I took inspiration from other personal portfolios out there and looked at some projects on GitHub, but wrote most of the code by myself.</p> <p>The main technology used is React, a front-end framework developed by Facebook. I also used React-Bootstrap, a library of responsive UI react components and Victory, a library for animated graphs. The site is hosted on Github Pages, a simple and free hosting option.</p>",
         "technologies":"HTML/CSS, JavaScript, React, Bootstrap, AWS",
         "mistakes":"I should have research more frontend libraries before starting with react-bootstrap.",
         "link":"https://github.com/ClaraJacintho/portfolio"
@@ -12,18 +13,18 @@
         "title": "Gesture Recognition",
         "previewText": "A project to recognize simple hand gestures",
         "img":"gesture",
-        "description": "This project was developed in partnership with Boise State University as an Industrial Project during my 4th year at engineering school. It consisted of using visual and muscle features to recognize simple hand gestures.",
+        "description": "<p>The project was proposed by the Boise State University’s Speech, Language and Interactive Machines (SLIM) Lab, as an attempt to generalize the model they had defined previously, where they attempted to apply the concept of mirror neurons to gesture recognition. It was developed as a “Projet Industriel”, where groups of 3 students work on a project for 2 months, having frequent meetings with the client and developing the proposal from the beginning (defining the requirement, design)  to end (delivery and deployment).</p><p><a href=\"https://github.com/bsu-slim/WAC-Hands/blob/master/embodied-sem-semdial.pdf\" className=\"wordLink hov\">Their project</a> was creating a gesture recognizer using not only the image (visual features) but also the muscle/tendon activations of the hands. They then created a model that could extract the muscle features from images and claimed that that mimicked the mirror neuron activating when seeing an image. Our project consisted of redoing some of their experiments <a href=\"http://lttm.dei.unipd.it/downloads/gesture/\" className=\"wordLink hov\"> using real hands</a> instead of artificially generated ones.</p><p>We used 2 different approaches to extract visual features from the images:</p><ol><li>We trained a Convolutional Neural Network from Scratch;</li> <li>We used transfer learning with VGG19 and Mobile Net.</li></ol><p>We trained a model to recognize the gestures based only on image. The first approach only managed an accuracy of around 30%,mostly due to the small size of our dataset. The second approach yielded better results, with around 80% accuracy, but withconcerns of overfitting.</p><p>For deriving tendon values, we the same approach as BSU, using a Ridge Regression model trained with artificial hands data. This approach leads to weird tendon activation values, and, when combined with the visual features, provides results with lower overall accuracy than with image alone.</p><p>These results seem to contradict the previous findings from the BSU Lab, but in reality, they only show that their model is not generalizable, that is, you cannot simply apply the same Ridge Regression model and expect accurate tendon value (i.e. accurately mimic the mirror neuron). This is due to the fact, we believe, that the artificial hand dataset on which the RR model is trained on differs greatly from the real hand dataset we used. We applied a variety of filters and masks on the two datasets, but it did not improve the results.</p><p>We also created a program that captures live image from a webcam and recognizes the gesture, as a demo. </p><p>While the results were not what swe were expecting, the group learned quite a lot. The project was well-received by BSU and got the best grade of the class! I had no previous experience with machine learning and manage to learn a lot about convolutional neural networks, Keras, Python and TensorFlow.</p>",
         "technologies":"Python, Keras, Tensor Flow, OpenCV",
-        "mistakes":"We should have used a cloud computing machine to train the models.",
+        "mistakes":"We should have used a machine on the Cloud to train our models, as they would sometime take upwards of 8 hours to finish, which slowed down development.",
         "link":"https://github.com/ClaraJacintho/GestureRecognitionSLIM"
     },
     "handyman":{
         "title": "Handyman Application",
         "previewText": "A Java application to hire handyman",
         "img":"handyman",
-        "description": "A Java application to hire handymen to do simple services. Inspired by Triider. Developed for the Software Engineering course using desing patterns.",
-        "technologies":"Java",
-        "mistakes":"We should have foucused on the front-end more.",
+        "description": "<p>This simple application was created for the Software Engineering course at my University. In the app, you can register as a handyman or as a client. A client can hire the handyman to do various jobs, which he can accept or not. A handyman can have a portfolio to show his skills and attract customers. The application had an online database and could be used concurrently by many users.</p><p>The project was developed in Java and had a MySQL database. I worked on the backend, designing the database schemes, making the connection between the program and DB and implementing the backend architecture with the DAO/Factory pattern. </p><p>The main purpose of the project was to see the many different design patterns learned in class, such as Factory and Observer/Observable in action. It helped me understand why the patterns work and how to apply them.</p>",
+        "technologies":"Java, MySQL",
+        "mistakes":"The group should have focused more on the UI, as it proved to be a greater challenge than we were expecting.",
         "link":"https://github.com/ClaraJacintho/seproject"
     }
 
