@@ -1,11 +1,9 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { ReactComponent as PET } from "../assets/pet.svg"
-import { ReactComponent as UCSD } from "../assets/ucsd.svg"
-import { ReactComponent as UFGRS } from "../assets/ufrgs.svg"
-import { ReactComponent as UM } from "../assets/um.svg"
-import { ReactComponent as SAP } from "../assets/sap.svg"
+import { ReactComponent as School } from "../assets/mortarboard.svg"
+import { ReactComponent as Work } from "../assets/portfolio.svg"
+import { ReactComponent as Star } from "../assets/star.svg"
 import "./Education.css"
 
 
@@ -18,65 +16,77 @@ export const Education = () => (
                 className="vertical-timeline-element--work left"
                 date="06/2019 - 08/2019"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<UCSD/>}
+                icon={<Work/>}
             >
-                <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+                <h3 className="vertical-timeline-element-title">Research Intern</h3>
+                <h4 className="vertical-timeline-element-subtitle">UCSD VLSI CAD Lab</h4>
+                <h5>San Diego, US</h5>
                 <p>
-                Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                Participated in the elaboration and implementation of a generic standard for library and cell names.
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work right"
                 date="2018 - 2020"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                icon={<UM/>}
+                iconStyle={{ background: 'rgb(255, 145, 178)', color: '#fff' }}
+                icon={<School/>}
             >
-                <h3 className="vertical-timeline-element-title">Art Director</h3>
-                <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+                <h3 className="vertical-timeline-element-title">M.Eng. Computer Science and Management</h3>
+                <h4 className="vertical-timeline-element-subtitle">Polytech Montpellier</h4>
+                <h5>Montpellier, FR</h5>
                 <p>
-                Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+                A selective Engineering school, accredited by the French Government, 
+                with a very practical curriculum including Software Engineering, 
+                Data Science and Project Management.
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work left"
                 date="01/2018 - 06/2018"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<SAP/>}
+                icon={<Work/>}
             >
-                <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+                <h3 className="vertical-timeline-element-title">Software Engineering Intern</h3>
+                <h4 className="vertical-timeline-element-subtitle">SAP</h4>
+                <h5>São Leopoldo, BR</h5>
                 <p>
-                User Experience, Visual Design
+                Worked in the maintenance and evolution of the Human Capital Management 
+                software product with focus on Spanish companies. The activities were executed 
+                following the Agile methodology with Scrum in a multidisciplinary team.
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work right"
                 date="2016 - 2018"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<PET/>}
+                icon={<Work/>}
             >
-                <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+                <h3 className="vertical-timeline-element-title">Research Intern</h3>
+                <h4 className="vertical-timeline-element-subtitle">PET Computação UFGRS</h4>
                 <p>
-                User Experience, Visual Design
+                Developed projects in the areas of education and research, such as mini-courses, 
+                android development, and data analysis. I was elected team leader and coordinated 
+                the other undergraduate researchers, facilitating the communication between 
+                professors and other team members.
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education left"
                 date="2015 - 2021"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                icon={<UFGRS/>}
+                iconStyle={{ background: 'rgb(255, 145, 178)', color: '#fff' }}
+                icon={<School/>}
             >
-                <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
+                <h3 className="vertical-timeline-element-title">B.Sc., Computer Science</h3>
+                <h4 className="vertical-timeline-element-subtitle">UFGRS</h4>
+                <h5>Porto Alegre, BR</h5>
                 <p>
-                Creative Direction, Visual Design
+                One of the top 5 Brazilian universities, with a strong technical curriculum 
+                including Algorithms, Data Structures and Complexity. 
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                icon={<UFGRS/>}
+                icon={<Star/>}
             />
         </VerticalTimeline>
         </div>

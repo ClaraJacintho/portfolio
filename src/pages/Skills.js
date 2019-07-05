@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Container, Row, Col} from 'react-bootstrap'
 import {VictoryBar, VictoryLabel} from 'victory'
-import './Skills.css'
 
 //TODO: prettyfy
 class Skills extends Component {
