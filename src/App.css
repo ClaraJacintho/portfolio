@@ -20,8 +20,6 @@
   margin-top: 45px;
   background: white;
   min-height: 85vh;
-  display: flex; 
-  align-items: center;
 }
 
 .pageTitle{
@@ -42,7 +40,6 @@
   .page{
       margin-top: 55px;
       width: 70vw;
-      display: block;
       margin-left: auto;
       margin-right: auto;
   }

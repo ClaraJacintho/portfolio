@@ -6,17 +6,17 @@ import { ReactComponent as UCSD } from "../assets/ucsd.svg"
 import { ReactComponent as UFGRS } from "../assets/ufrgs.svg"
 import { ReactComponent as UM } from "../assets/um.svg"
 import { ReactComponent as SAP } from "../assets/sap.svg"
-
+import "./Education.css"
 
 
 export const Education = () => (
     <div className="background top">
         <div> ⠀ </div>
-        <div className="page" style={{background: "#E8DCCA"}}>
+        <div className="page" style={{background: "#C3E4E8"}}>
         <VerticalTimeline>
             <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2011 - present"
+                className="vertical-timeline-element--work left"
+                date="06/2019 - 08/2019"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<UCSD/>}
             >
@@ -27,8 +27,8 @@ export const Education = () => (
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2010 - 2011"
+                className="vertical-timeline-element--work right"
+                date="2018 - 2020"
                 iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                 icon={<UM/>}
             >
@@ -39,8 +39,8 @@ export const Education = () => (
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2008 - 2010"
+                className="vertical-timeline-element--work left"
+                date="01/2018 - 06/2018"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<SAP/>}
             >
@@ -51,8 +51,8 @@ export const Education = () => (
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2006 - 2008"
+                className="vertical-timeline-element--work right"
+                date="2016 - 2018"
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<PET/>}
             >
@@ -63,8 +63,8 @@ export const Education = () => (
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="2002 - 2006"
+                className="vertical-timeline-element--education left"
+                date="2015 - 2021"
                 iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                 icon={<UFGRS/>}
             >
@@ -74,6 +74,10 @@ export const Education = () => (
                 Creative Direction, Visual Design
                 </p>
             </VerticalTimelineElement>
+            <VerticalTimelineElement
+                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                icon={<UFGRS/>}
+            />
         </VerticalTimeline>
         </div>
     </div>
