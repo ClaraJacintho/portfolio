@@ -5,7 +5,7 @@ import PortfolioPicture from "../assets/portfolio_banner.jpg"
 import GesturePicture from "../assets/gesture_banner.jpg"
 import HandymanPicture from "../assets/handyman_banner.jpg"
 import project from '../assets/content/projects.json'
-//There must be another way!
+//There must be another way! THERE MUST BE ANOTHER WAY!!!!
 import GestureP from "../assets/gesture_project.png"
 import HandymanP from "../assets/handyman_project.png"
 import PortfolioP from "../assets/portfolio_project.png"

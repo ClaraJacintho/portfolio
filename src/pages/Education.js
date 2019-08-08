@@ -8,9 +8,7 @@ import "./Education.css"
 
 
 export const Education = () => (
-    <div className="dark">
-        <div> ⠀ </div>
-        <div className="page" style={{background: "#C3E4E8"}}>
+        <div style={{background: "#e1e1e1"}}>
         <VerticalTimeline>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work left"
@@ -22,13 +20,14 @@ export const Education = () => (
                 <h4 className="vertical-timeline-element-subtitle">UCSD VLSI CAD Lab</h4>
                 <h5>San Diego, US</h5>
                 <p>
-                Participated in the elaboration and implementation of a generic standard for library and cell names.
+                Participated in the elaboration and implementation of a generic standard for integrated circuit's cell names. Designed and implemented
+                software to translate between proprietary and generic standards.
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work right"
                 date="2018 - 2020"
-                iconStyle={{ background: 'rgb(255, 145, 178)', color: '#fff' }}
+                iconStyle={{ background: '#6ee6d8', color: '#fff' }}
                 icon={<School/>}
             >
                 <h3 className="vertical-timeline-element-title">M.Eng. Computer Science and Management</h3>
@@ -73,7 +72,7 @@ export const Education = () => (
             <VerticalTimelineElement
                 className="vertical-timeline-element--education left"
                 date="2015 - 2021"
-                iconStyle={{ background: 'rgb(255, 145, 178)', color: '#fff' }}
+                iconStyle={{ background: '#6ee6d8', color: '#fff' }}
                 icon={<School/>}
             >
                 <h3 className="vertical-timeline-element-title">B.Sc., Computer Science</h3>
@@ -90,5 +89,4 @@ export const Education = () => (
             />
         </VerticalTimeline>
         </div>
-    </div>
 )
