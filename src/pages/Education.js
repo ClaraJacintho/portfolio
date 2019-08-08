@@ -8,7 +8,7 @@ import "./Education.css"
 
 
 export const Education = () => (
-    <div className="background top">
+    <div className="dark">
         <div> ⠀ </div>
         <div className="page" style={{background: "#C3E4E8"}}>
         <VerticalTimeline>

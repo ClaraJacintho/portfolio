@@ -42,7 +42,7 @@ class Project extends Component {
 
     render() {
         return (
-            <div className="background top">
+            <div className="top" style={{background: "#e1e1e1"}}>
                 <div> ⠀ </div>
                 <div className="page">
                     <Container>

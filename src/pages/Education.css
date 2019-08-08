@@ -1,5 +1,5 @@
 /*The timeline wasnt working properly for some reason so I hacked a fix*/
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1000px) and (min-height: 500px){
     .left .vertical-timeline-element-date{
         margin-left: 50px;
     }

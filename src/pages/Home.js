@@ -29,9 +29,8 @@ class Home extends React.Component {
                                         <a className="hov wordButton"  href={CV} style={{fontSize: 23}} download>Resumé</a>
                                     </Button>
                                 </div>
-                                <h1 className="call">Check out my skills!</h1>
                                 <Link to="/skills" className="hov">
-                                    <Button className="wordButton hov" style={{fontSize: 50}} variant="light" block>Skills</Button>
+                                    <Button className="wordButton hov" style={{fontSize: 50}} variant="light" block>Check out my skills!</Button>
                                 </Link>
                             
                             </div>

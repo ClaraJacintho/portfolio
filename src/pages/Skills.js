@@ -29,9 +29,9 @@ class Skills extends Component {
 
           
         return (
-            <div className="background top">
+            <div>
                 <div> ⠀ </div>
-                <div className="page">
+                <div>
                 <Container>
                     <h1 className="pageTitle">Skills</h1>
                     <Row>
@@ -41,7 +41,7 @@ class Skills extends Component {
                                 concepts in many different projects. I was also able to develop this set of skills in my previous internship at SAP, 
                                 by building and maintaining HR software.</p>
                             <p> I am most familiar with Java, with C++ a near second, having worked with these languages for many projects in school, 
-                                where I also used design patternsl. Also, since my current degree is in Computer Science and Management I have had the 
+                                where I also used design patterns. Also, since my current degree is in Computer Science and Management I have had the 
                                 opportunity to study and to put in practice many of the facets of Project Management.
                             </p>
                         </Col>

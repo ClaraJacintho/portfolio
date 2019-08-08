@@ -11,13 +11,11 @@
  }
 
  .top{
-  margin-top: 55px;
   margin:0;
   height: 100%;
   min-height: 100vh;
 }
 .page{
-  margin-top: 45px;
   background: white;
   min-height: 85vh;
 }
@@ -38,7 +36,6 @@
 
 @media screen and (min-width: 1000px) and (min-height: 500px) {
   .page{
-      margin-top: 55px;
       width: 70vw;
       margin-left: auto;
       margin-right: auto;
