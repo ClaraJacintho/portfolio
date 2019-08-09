@@ -8,7 +8,8 @@ import "./Education.css"
 
 
 export const Education = () => (
-        <div style={{background: "#e1e1e1"}}>
+    <div className="fsback" style={{ background: "#e1e1e1"}}>
+        <div>
         <VerticalTimeline>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work left"
@@ -88,5 +89,7 @@ export const Education = () => (
                 icon={<Star/>}
             />
         </VerticalTimeline>
+        <h1 style={{color:"#e1e1e1"}}>F</h1>
         </div>
+    </div>
 )
